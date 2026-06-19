@@ -9,7 +9,7 @@ DOC_ID = "ex369ZUNRrA9"
 BASE   = "https://grist.numerique.gouv.fr"
 
 # Noms exacts de tes onglets Grist
-TABLE_BIB = "Bibliotheques"
+TABLE_BIB = "Bib"
 TABLE_PER = "Periodes"
 TABLE_HOR = "Horaires"
 TABLE_FER = "Fermetures"
