@@ -7,7 +7,8 @@ from datetime import datetime, timezone
 DOC_ID = "ex369ZUNRrA9"
 BASE   = "https://grist.numerique.gouv.fr"
 
-TABLE_BIB = "Bib"  # <--- LE SEUL ENDROIT A MODIFIER SI BESOIN
+# Ici, mets exactement le nom que tu vois dans l'onglet Grist (majuscules ou minuscules, peu importe maintenant)
+TABLE_BIB = "bib" 
 TABLE_PER = "Periodes"
 TABLE_HOR = "Horaires"
 TABLE_FER = "Fermetures"
@@ -33,9 +34,12 @@ def ms_to_date(val):
     try: return datetime.fromtimestamp(val / 1000, tz=timezone.utc).strftime("%Y-%m-%d")
     except: return None
 
+# LA NOUVELLE FONCTION QUI IGNORE LES MAJUSCULES ET LES ESPACES
 def find_table_id(tables_list, name):
+    cherche = name.strip().lower()
     for t in tables_list:
-        if t.get("name") == name: return t["id"]
+        if t.get("name", "").strip().lower() == cherche: 
+            return t["id"]
     return None
 
 print("Récupération des tables...")
