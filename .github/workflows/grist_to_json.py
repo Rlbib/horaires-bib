@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+import sys
 from datetime import datetime, timezone
 
 # ── Configuration ──────────────────────────────────────────────
@@ -14,7 +15,6 @@ TABLE_HOR = "Horaires"
 TABLE_FER = "Fermetures"
 TABLE_PRE = "Prets"
 
-import os
 API_KEY = os.environ.get("GRIST_API_KEY", "")
 if not API_KEY:
     print("ERREUR : variable GRIST_API_KEY vide")
@@ -64,7 +64,7 @@ for r in raw[TABLE_BIB]:
     f = r["fields"]
     bib_by_recid[r["id"]] = f
     bibliotheques.append({
-        "id": f.get("id2"),  # <-- Colonne id2 de ton Grist
+        "id": f.get("id2"),
         "nom": f.get("nom"),
         "icone": f.get("icone"),
         "ordre": f.get("ordre")
@@ -78,7 +78,7 @@ for r in raw[TABLE_PER]:
     f = r["fields"]
     per_by_recid[r["id"]] = f
     periodes.append({
-        "id": f.get("id2"),  # <-- Colonne id2 de ton Grist
+        "id": f.get("id2"),
         "nom": f.get("nom"),
         "date_debut": ms_to_date(f.get("date_debut")),
         "date_fin": ms_to_date(f.get("date_fin")),
