@@ -14,7 +14,8 @@ TABLE_HOR = "Horaires"
 TABLE_FER = "Fermetures"
 TABLE_PRE = "Prets"
 
-API_KEY = sys.environ.get("GRIST_API_KEY", "")
+import os
+API_KEY = os.environ.get("GRIST_API_KEY", "")
 if not API_KEY:
     print("ERREUR : variable GRIST_API_KEY vide")
     sys.exit(1)
