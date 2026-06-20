@@ -34,19 +34,19 @@
       "id": "ete",
       "nom": "Horaires d'été",
       "date_debut": "2025-07-01",
-      "date_fin": "2025-08-29",
+      "date_fin": "2100-08-07",
       "priorite": 2,
       "active": true,
       "alerte": "Les horaires d'été s'appliquent dès maintenant en raison de la vigilance météo.",
-      "type_alerte": "danger"
+      "type_alerte": "warning"
     },
     {
       "id": "canicule",
       "nom": "Alerte canicule",
       "date_debut": "2025-06-25",
-      "date_fin": "2040-07-03",
+      "date_fin": "2030-02-22",
       "priorite": 3,
-      "active": true,
+      "active": false,
       "alerte": "Vigilance canicule : horaires aménagés.",
       "type_alerte": "danger"
     },
@@ -412,5 +412,5 @@
     "prolongation": false,
     "texte": "Empruntez pour 8 semaines, sans prolongation."
   },
-  "generated_at": "2026-06-20T07:49:06Z"
+  "generated_at": "2026-06-20T08:15:00Z"
 }
