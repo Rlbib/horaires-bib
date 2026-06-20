@@ -35,10 +35,11 @@ try:
         try: return datetime.fromtimestamp(val / 1000, tz=timezone.utc).strftime("%Y-%m-%d")
         except: return None
 
+    # Correction ici : on cherche dans "id" au lieu de "name"
     def find_table_id(tables_list, name):
         cherche = name.strip().lower()
         for t in tables_list:
-            if t.get("name", "").strip().lower() == cherche: 
+            if t.get("id", "").strip().lower() == cherche: 
                 return t["id"]
         return None
 
@@ -52,7 +53,8 @@ try:
             print(f"!!! TABLE INTROUVABLE : '{name}' !!!")
             print("Tables existantes :")
             for t in all_tables:
-                print(f"  -> '{t.get('name')}'")
+                # Correction ici pour l'affichage de débogage
+                print(f"  -> '{t.get('id')}'")
             sys.exit(1)
         table_ids[name] = tid
 
@@ -105,7 +107,7 @@ try:
 
     prets = {"actif": bool(prets_raw.get("actif", {}).get("valeur_bool", False)), "debut": ms_to_date(prets_raw.get("debut", {}).get("valeur_date")), "fin": ms_to_date(prets_raw.get("fin", {}).get("valeur_date")), "duree_semaines": prets_raw.get("duree_semaines", {}).get("valeur_nombre"), "prolongation": bool(prets_raw.get("prolongation", {}).get("valeur_bool", False)), "texte": prets_raw.get("texte", {}).get("valeur_texte")}
 
-    result = {"bibliotheques": bibliotheques, "periodes": periodes, "horaires": horaires, "fermetures": fermetures, "prets": prets, "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}
+    result = {"bibliotheques": bibliotheques, "periodes": periodes, "horaires": horaires, "fermetures": closures if 'closures' in locals() else fermetures, "prets": prets, "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}
 
     with open("horaires.json", "w", encoding="utf-8") as fp:
         json.dump(result, fp, ensure_ascii=False, indent=2)
