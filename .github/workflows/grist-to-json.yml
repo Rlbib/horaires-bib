@@ -5,6 +5,10 @@ on:
     - cron: '0 * * * *' # Toutes les heures
   workflow_dispatch:    # Permet de lancer à la main
 
+# Ajout des permissions pour permettre le push
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
