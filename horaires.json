@@ -44,7 +44,7 @@
       "id": "canicule",
       "nom": "Alerte canicule",
       "date_debut": "2025-06-25",
-      "date_fin": "2025-07-03",
+      "date_fin": "2040-07-03",
       "priorite": 3,
       "active": true,
       "alerte": "Vigilance canicule : horaires aménagés.",
