@@ -24,7 +24,7 @@
       "id": "normale",
       "nom": "Horaires habituels",
       "date_debut": "2025-01-01",
-      "date_fin": "2025-06-30",
+      "date_fin": "2100-12-25",
       "priorite": 1,
       "active": true,
       "alerte": null,
@@ -419,5 +419,5 @@
     "prolongation": false,
     "texte": "Empruntez pour 8 semaines, sans prolongation."
   },
-  "generated_at": "2026-06-20T08:30:06Z"
+  "generated_at": "2026-06-20T08:33:55Z"
 }
