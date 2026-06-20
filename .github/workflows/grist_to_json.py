@@ -31,9 +31,9 @@ try:
         return r.json()
 
     def ms_to_date(val):
-        if val is None: return None
-        try: return datetime.fromtimestamp(val / 1000, tz=timezone.utc).strftime("%Y-%m-%d")
-        except: return None
+    if val is None: return None
+    try: return datetime.fromtimestamp(val, tz=timezone.utc).strftime("%Y-%m-%d") # <- Supprimé : / 1000
+    except: return None
 
     # Correction ici : on cherche dans "id" au lieu de "name"
     def find_table_id(tables_list, name):
