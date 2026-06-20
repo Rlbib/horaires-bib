@@ -23,8 +23,8 @@
     {
       "id": "normale",
       "nom": "Horaires habituels",
-      "date_debut": "1970-01-21",
-      "date_fin": "1970-01-21",
+      "date_debut": "2025-01-01",
+      "date_fin": "2025-06-30",
       "priorite": 1,
       "active": true,
       "alerte": null,
@@ -33,8 +33,8 @@
     {
       "id": "ete",
       "nom": "Horaires d'été",
-      "date_debut": "1970-01-21",
-      "date_fin": "1970-01-21",
+      "date_debut": "2025-07-01",
+      "date_fin": "2025-08-29",
       "priorite": 2,
       "active": true,
       "alerte": "Les horaires d'été s'appliquent dès maintenant en raison de la vigilance météo.",
@@ -43,18 +43,18 @@
     {
       "id": "canicule",
       "nom": "Alerte canicule",
-      "date_debut": "1970-01-21",
-      "date_fin": "1970-01-21",
+      "date_debut": "2025-06-25",
+      "date_fin": "2025-07-03",
       "priorite": 3,
-      "active": false,
+      "active": true,
       "alerte": "Vigilance canicule : horaires aménagés.",
       "type_alerte": "danger"
     },
     {
       "id": "rentree",
       "nom": "Rentrée",
-      "date_debut": "1970-01-21",
-      "date_fin": "1970-01-21",
+      "date_debut": "2025-08-30",
+      "date_fin": "2025-12-31",
       "priorite": 1,
       "active": true,
       "alerte": null,
@@ -300,117 +300,117 @@
   "fermetures": [
     {
       "biblio": "ag",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-08-11",
+      "fin": "2025-08-15",
       "motif": "Fermeture annuelle",
       "type": "fermeture_annuelle"
     },
     {
       "biblio": "mg",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-08-18",
+      "fin": "2025-08-22",
       "motif": "Fermeture annuelle",
       "type": "fermeture_annuelle"
     },
     {
       "biblio": "rv",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-08-11",
+      "fin": "2025-08-22",
       "motif": "Fermeture annuelle",
       "type": "fermeture_annuelle"
     },
     {
       "biblio": "all",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-01-01",
+      "fin": "2025-01-01",
       "motif": "Jour de l'An",
       "type": "ferie"
     },
     {
       "biblio": "all",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-04-21",
+      "fin": "2025-04-21",
       "motif": "Lundi de Pâques",
       "type": "ferie"
     },
     {
       "biblio": "all",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-05-01",
+      "fin": "2025-05-01",
       "motif": "Fête du Travail",
       "type": "ferie"
     },
     {
       "biblio": "all",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-05-08",
+      "fin": "2025-05-08",
       "motif": "Victoire 1945",
       "type": "ferie"
     },
     {
       "biblio": "all",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-05-29",
+      "fin": "2025-05-29",
       "motif": "Ascension",
       "type": "ferie"
     },
     {
       "biblio": "all",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-05-30",
+      "fin": "2025-05-30",
       "motif": "Pont de l'Ascension",
       "type": "pont"
     },
     {
       "biblio": "all",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-06-09",
+      "fin": "2025-06-09",
       "motif": "Lundi de Pentecôte",
       "type": "ferie"
     },
     {
       "biblio": "all",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-07-14",
+      "fin": "2025-07-14",
       "motif": "Fête nationale",
       "type": "ferie"
     },
     {
       "biblio": "all",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-08-15",
+      "fin": "2025-08-15",
       "motif": "Assomption",
       "type": "ferie"
     },
     {
       "biblio": "all",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-11-01",
+      "fin": "2025-11-01",
       "motif": "Toussaint",
       "type": "ferie"
     },
     {
       "biblio": "all",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-11-11",
+      "fin": "2025-11-11",
       "motif": "Armistice",
       "type": "ferie"
     },
     {
       "biblio": "all",
-      "debut": "1970-01-21",
-      "fin": "1970-01-21",
+      "debut": "2025-12-25",
+      "fin": "2025-12-25",
       "motif": "Noël",
       "type": "ferie"
     }
   ],
   "prets": {
     "actif": true,
-    "debut": "1970-01-21",
-    "fin": "1970-01-21",
+    "debut": "2025-07-04",
+    "fin": "2025-08-22",
     "duree_semaines": 8,
     "prolongation": false,
     "texte": "Empruntez pour 8 semaines, sans prolongation."
   },
-  "generated_at": "2026-06-20T07:18:27Z"
+  "generated_at": "2026-06-20T07:49:06Z"
 }
